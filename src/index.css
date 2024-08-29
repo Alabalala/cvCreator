@@ -8,6 +8,10 @@
   background-color: #919191;
 }
 
+main {
+  margin-bottom: 200px;
+}
+
 html,
 body {
   width: 100%;
@@ -41,11 +45,6 @@ nav :active {
 }
 
 .bigSection {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  font-size: 2em;
-  padding: 1em;
   background-color: #919191;
 }
 
@@ -56,6 +55,18 @@ nav :active {
 .bigSection button {
   padding: 15px;
   font-size: 1em;
+}
+
+.educationCard {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  font-size: 2em;
+  border-bottom: 5px solid #353535;
+  padding: 40px;
+}
+.educationCard h2:first-of-type {
+  padding-top: 40px;
 }
 
 label {
@@ -128,14 +139,20 @@ h2 {
   color: #a6dfe7;
 }
 
-.editButton {
+.cardButtons button {
   background-color: transparent;
   border: none;
-  position: absolute;
-  right: 1em;
 }
 
-.editButton :active {
+.cardButtons button:hover,
+.cardButtons button:active {
   color: rgb(134, 197, 206);
   text-shadow: 4px 4px 3px rgba(2, 2, 2, 0.5);
+}
+
+.individualSeparator {
+  height: 5px;
+  margin: 10px auto;
+  background-color: #353535;
+  width: auto;
 }

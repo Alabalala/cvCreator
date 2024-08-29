@@ -51,7 +51,7 @@ export default function AboutYou() {
             onChange={(e) => setProfile({ ...profile, title: e.target.value })}
           />
 
-          <label htmlFor="YoE">Years of experience:</label>
+          <label htmlFor="YoE">Years of experience</label>
           <input
             type="text"
             className="YoE"
